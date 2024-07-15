@@ -1,0 +1,698 @@
+body{
+    background: radial-gradient(circle,#000,#0c1e3f);
+    height: 100vh;
+
+}
+
+.wrapper span{
+    position: fixed;
+    animation: animate 2s linear infinite;
+    z-index:-100;
+
+}
+
+.wrapper span i{
+    color:#fff;
+    font-size: 18px;
+}
+.wrapper span:nth-child(1){
+    left:60px;
+    animation-delay: 0.6s;
+    top: 5%;
+}
+
+.wrapper span:nth-child(2){
+    left: 10%;
+    animation-delay: 2s;
+    top: 40%;
+}
+
+.wrapper span:nth-child(3){
+    left: 20%;
+    animation-delay: 5s;
+    top: 15%;
+}
+
+.wrapper span:nth-child(4){
+    left: 26%;
+    animation-delay: 4s;
+    top: 67%;
+}
+.wrapper span:nth-child(5){
+    left: 40%;
+    animation-delay: .5s;
+    top: 85%;
+}
+.wrapper span:nth-child(6){
+    left: 50%;
+    animation-delay: 5s;
+    top: 23%;
+}
+.wrapper span:nth-child(7){
+    left: 60%;
+    animation-delay: 6s;
+    top: 65%;
+}
+.wrapper span:nth-child(8){
+    left: 70%;
+    animation-delay: 3.5s;
+    top: 12%;
+}
+.wrapper span:nth-child(9){
+    left: 10%;
+    animation-delay: 2s;
+    top: 40%;
+}
+.wrapper span:nth-child(10){
+    left: 90%;
+    animation-delay: 3s;
+    top: 14%;
+}
+.wrapper span:nth-child(11){
+    right: 10%;
+    animation-delay: 10s;
+    bottom: 42%;
+}
+.wrapper span:nth-child(12){
+    right: 39%;
+    animation-delay: 5s;
+    bottom: 62%;
+}
+
+
+.box-area{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index:1;
+
+}
+
+
+
+.text-area h3 b{
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 5px;
+    font-size:45px;
+
+}
+@keyframes animate {
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+    
+}
+.sun{
+    height: 120px;
+    width: 120px;
+    background-image: url(3.png);
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -4px 2px 56px #f9c05f;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50% );
+}
+.mercury{
+    height: 30px;
+    width: 30px;
+    background-image: url(8.png);
+    background-size: 100%;
+    border-radius: 50%;
+    position:absolute;
+    box-shadow: -4px 2px 56px #f9c05f;
+    left: 46%;
+    top: 42%;
+    transform: translate(-50%,-50%);
+    animation: orbit2 2s linear infinite;
+}
+
+@keyframes orbit2 {
+    from{transform: rotate(0deg)translatex(70px) rotate(0deg);}
+    to{transform: rotate(360deg)translatex(70px) rotate(-360deg);}
+
+}
+p{
+    color: white;
+    font-family: system-ui;
+    position: absolute;
+    left:-62px;
+    top: -11px;
+}
+.mercury-outline,.venus-outline-1,.earth-outline-1,.mars-outline-1,.jupiter-outline-1,
+.saturn-outline-1,.uranus-outline-1,.neptune-outline-1{
+    border-radius: 50%;
+    border: 1px dotted #ddd9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.mercury-outline{
+    height: 140px;
+    width:140px;
+}
+.venus{
+    height: 40px;
+    width: 40px;
+    background-image: url(4.png);
+    background-size: 100%;
+    border-radius: 50%;
+    position:absolute;
+    box-shadow: -4px 2px 56px #a36f13;
+    left: 40%;
+    top: 42%;
+    transform: translate(-50%,-50%);
+    animation: orbit3 10s linear infinite;
+}
+@keyframes orbit3 {
+    from{transform: rotate(0deg)translatex(100px) rotate(0deg);}
+    to{transform: rotate(360deg)translatex(100px) rotate(-360deg);}
+}
+.venus-outline-1{
+    height: 200px;
+    width:200px;
+}
+
+
+.earth{
+    height: 50px;
+    width: 50px;
+    background-image: url(5.png);
+    background-size: 100%;
+    border-radius: 50%;
+    position:absolute;
+    box-shadow: -4px 2px 56px #2855d6;
+    left: 44%;
+    top: 43%;
+    transform: translate(-50%,-50%);
+    animation: orbit4 20s linear infinite;
+}
+@keyframes orbit4 {
+    from{transform: rotate(0deg)translatex(150px) rotate(0deg);}
+    to{transform: rotate(360deg)translatex(150px) rotate(-360deg);}
+}
+
+.earth-outline-1{
+    height: 300px;
+    width:300px;
+}
+.earth-circle{
+    height: 65px;
+    width: 65px;
+    border: 1px dotted #fff;
+    position: relative;
+    left: -8px;
+    top: -8px;
+    border-radius: 40px;
+}
+.earth-inner{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left:45%;
+    top:45%;
+    animation: orbit5 3s linear infinite;
+}
+@keyframes orbit5 {
+    from{transform: rotate(0deg)translatex(33px) rotate(0deg);}
+    to{transform: rotate(360deg)translatex(33px) rotate(-360deg);}
+}
+
+.mars{
+    height: 40px;
+    width: 40px;
+    background-image: url(1.png);
+    background-size: 100%;
+    border-radius: 50%;
+    position:absolute;
+    box-shadow: -4px 2px 56px #ca0505;
+    left: 46.5%;
+    top: 46.5%;
+    transform: translate(-50%,-50%);
+    animation: orbit6 30s linear infinite;
+}
+@keyframes orbit6 {
+    from{transform: rotate(0deg)translatex(185px) rotate(0deg);}
+    to{transform: rotate(360deg)translatex(185px) rotate(-360deg);}
+}
+.mars-outline-1{
+    height: 370px;
+    width:370px;
+}
+
+.jupiter{
+    height: 40px;
+    width: 40px;
+    background-image: url(10.png);
+    background-size: 100%;
+    border-radius: 50%;
+    position:absolute;
+    box-shadow: -4px 2px 56px #cac2b9;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    animation: orbit7 60s linear infinite;
+}
+@keyframes orbit7 {
+    from{transform: rotate(0deg)translatex(217px) rotate(0deg);}
+    to{transform: rotate(360deg)translatex(217px) rotate(-360deg);}
+}
+.jupiter-outline-1{
+    height: 430px;
+    width:430px;
+}
+
+.saturn{
+    height: 60px;
+    width: 60px;
+    background-image: url(7.png);
+    background-size: 100%;
+    border-radius: 50%;
+    position:absolute;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    animation: orbit9 90s linear infinite;
+}
+@keyframes orbit9 {
+    from{transform: rotate(0deg)translatex(250px) rotate(0deg);}
+    to{transform: rotate(360deg)translatex(250px) rotate(-360deg);}
+}
+.saturn-outline-1{
+    height: 500px;
+    width:500px;
+}
+
+.uranus{
+    height: 50px;
+    width: 50px;
+    background-image: url(9.png);
+    background-size: 100%;
+    border-radius: 50%;
+    position:absolute;
+   
+    left: 38%;
+    top: 48%;
+    transform: translate(-50%,-50%);
+    animation: orbit10 200s linear infinite;
+}
+@keyframes orbit10 {
+    from{transform: rotate(0deg)translatex(280px) rotate(0deg);}
+    to{transform: rotate(360deg)translatex(280px) rotate(-360deg);}
+}
+.uranus-outline-1{
+    height: 560px;
+    width:560px;
+}
+
+.neptune{
+    height: 40px;
+    width: 40px;
+    background-image: url(6.png);
+    background-size: 100%;
+    border-radius: 50%;
+    position:absolute;
+    box-shadow: -4px 2px 56px #9581c1;
+    left: 48%;
+    top: 48%;
+    transform: translate(-50%,-50%);
+    animation: orbit11 400s linear infinite;
+}
+@keyframes orbit11 {
+    from{transform: rotate(0deg)translatex(310px) rotate(0deg);}
+    to{transform: rotate(360deg)translatex(310px) rotate(-360deg);}
+}
+.neptune-outline-1{
+    height: 620px;
+    width:620px;
+}
+.jjk{
+  position:relative;
+  left: 6em;
+  bottom:10px;
+  
+}
+.check1{
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width:200px;
+  cursor: pointer;
+  
+}
+.check2{
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+   width:200px;
+  cursor: pointer;
+}
+.check3{
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width:200px;
+  cursor: pointer;
+}
+.check4{
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width:200px;
+  cursor: pointer;
+}
+.check5{
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width:200px;
+  cursor: pointer;
+}
+.check6{
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width:200px;
+  cursor: pointer;
+}
+.check7{
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width:200px;
+  cursor: pointer;
+}
+.check8{
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width:200px;
+  cursor: pointer;
+}
+.check1:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #FF4500;
+  
+  
+}
+.check2:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #FF4500;
+}
+.check3:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #FF4500;
+}
+.check4:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #FF4500;
+}
+.check5:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #FF4500;
+}
+.check6:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #FF4500;
+}
+.check7:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #FF4500;
+}
+
+.check8:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #FF4500;
+}
+
+.hide1 {
+  display: none;
+   position: relative; /* Change the position to absolute */
+  bottom: 10em; /* Adjust the vertical position */
+  left: 10em; /* Adjust the horizontal position */
+  
+}
+.hide2 {
+  display: none;
+   position: relative; /* Change the position to absolute */
+  bottom: 10em; /* Adjust the vertical position */
+  left: 30em; /* Adjust the horizontal position */
+  
+}
+.hide3 {
+  display: none;
+   position: relative; /* Change the position to absolute */
+  bottom: 10em; /* Adjust the vertical position */
+  left: 40em; /* Adjust the horizontal position */
+  
+}
+.hide4 {
+  display: none;
+   position: relative; /* Change the position to absolute */
+  bottom: 10em; /* Adjust the vertical position */
+  left: 50em; /* Adjust the horizontal position */
+  
+}
+.hide5 {
+  display: none;
+   position: relative; /* Change the position to absolute */
+  bottom: 10em; /* Adjust the vertical position */
+  left: 60em; /* Adjust the horizontal position */
+  
+}
+.hide6 {
+  display: none;
+   position: relative; /* Change the position to absolute */
+  bottom: 10em; /* Adjust the vertical position */
+  left: 70em; /* Adjust the horizontal position */
+  
+}
+.hide7 {
+  display: none;
+   position: relative; /* Change the position to absolute */
+  bottom: 10em; /* Adjust the vertical position */
+  left: 80em; /* Adjust the horizontal position */
+  
+}
+.hide8{
+  display:none;
+  position: relative; /* Change the position to absolute */
+  bottom: 10em; /* Adjust the vertical position */
+  left: 90em; /* Adjust the horizontal position */
+  
+ 
+}
+.check1:hover + .hide1 {
+  display: block;
+  color: #FFF8DC;
+  background-color:#4B0082;
+border-radius:4px;
+font-size:16px;
+padding:15px;
+margin:5px;
+  height: 69px;
+  width: 250px;
+  
+}
+.check2:hover + .hide2 {
+  display: block;
+  color: #FFF8DC;
+  background-color:#4B0082;
+border-radius:4px;
+font-size:16px;
+padding:15px;
+margin:5px;
+  height: 65px;
+  width: 250px;
+  
+}
+.check3:hover + .hide3 {
+  display: block;
+  color: #FFF8DC;
+  background-color:#4B0082;
+border-radius:4px;
+font-size:16px;
+padding:15px;
+margin:5px;
+  height: 50px;
+  width: 250px;
+  
+}
+.check4:hover + .hide4 {
+  display: block;
+  color: #FFF8DC;
+  background-color:#4B0082;
+border-radius:4px;
+font-size:16px;
+padding:15px;
+margin:5px;
+  height: 89px;
+  width: 250px;
+  
+}
+.check5:hover + .hide5 {
+  display: block;
+  color: #FFF8DC;
+  background-color:#4B0082;
+border-radius:4px;
+font-size:16px;
+padding:15px;
+margin:5px;
+  height: 69px;
+  width: 250px;
+  
+}
+.check6:hover + .hide6 {
+  display: block;
+  color: #FFF8DC;
+  background-color:#4B0082;
+border-radius:4px;
+font-size:16px;
+padding:15px;
+margin:5px;
+  height: 50px;
+  width: 250px;
+  
+}
+.check7:hover + .hide7 {
+  display: block;
+  color: #FFF8DC;
+  background-color:#4B0082;
+border-radius:4px;
+font-size:16px;
+padding:15px;
+margin:5px;
+  height: 155px;
+  width: 250px;
+  
+}
+.check8:hover + .hide8 {
+  display: block;
+  color: #FFF8DC;
+  background-color:#4B0082;
+border-radius:4px;
+font-size:16px;
+padding:15px;
+margin:5px;
+  height: 50px;
+  width: 250px;
+  
+}
+.neonText {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
+
+h1 {
+  font-size: 4.2rem;
+  animation: flicker 1.5s infinite alternate;     
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #0fa,
+      0 0 80px #0fa,
+      0 0 90px #0fa,
+      0 0 100px #0fa,
+      0 0 150px #0fa;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+
+/* Additional styling */
+  
+h2 {
+ font-size: 1.8rem;
+}
+.container {
+  margin-top: 20vh;
+  position: absolute;
+  top: 1%;
+  left: 37%;
+  z-index: 10;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #010a01;
+}  
+
+h1, h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
